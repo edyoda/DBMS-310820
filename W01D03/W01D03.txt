@@ -1,0 +1,79 @@
+SHOW DATABASES;
+
+USE EXAMPLE;
+
+SHOW TABLES;
+
+USE CLASSICMODELS;
+
+SHOW TABLES;
+
+USE EXAMPLE;
+
+
+CREATE TABLE EXAMPLE_4(
+DATE_OF_ADMISSION DATE,
+NAME VARCHAR(20),
+BALANCE DECIMAL(5,2),
+POSITION INT
+);
+
+ DESCRIBE EXAMPLE_4; --TO KNOW THE SCHEMA
+
+ INSERT INTO EXAMPLE_4 VALUES(
+     "1996-04-28",
+     "UPPLE",
+     53.45,
+     2
+ );
+
+
+ SELECT * FROM EXAMPLE_4;
+
+ INSERT INTO EXAMPLE_4 VALUES(
+     "1997-08-14",
+     "CROSOFT",
+     145.76,
+     1
+ );
+
+  SELECT * FROM EXAMPLE_4;
+
+ INSERT INTO EXAMPLE_4 VALUES(
+     "1993-09-06",
+     "LADOBE",
+     49.03,
+     3
+ );
+
+INSERT INTO EXAMPLE_4 VALUES(
+    "1992-09-06",
+    "Google",
+    500.50,
+    4
+);
+
+   SELECT * FROM EXAMPLE_4;
+
+--    EXAMPLE_1
+
+   SELECT * FROM EXAMPLE_4 WHERE NAME = "gOOGlE";
+
+   USE EXAMPLE;
+
+   CREATE TABLE SALES(
+       purchase_number int,
+       DATE_OF_purchase date,
+       customer_if int
+   );
+
+
+INSERT INTO SALES VALUES
+(1,"2016-09-03",1,"A_1"),
+(2,"2016-12-02",2,"C_1"),
+(3,"2017-04-15",3,"D_1"),
+(4,"2017-05-24",1,"B_2"),
+(5,"2017-05-25",4,"B_2");
+
+
+SELECT * FROM SALES;
